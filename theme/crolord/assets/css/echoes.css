@@ -1,0 +1,8 @@
+/* Native Mac typography; the plugin owns spacing and interaction styling. */
+.fieldnotes-ui .fnchat { font-family:var(--sans);font-size:16px;line-height:1.8;letter-spacing:-.015em; }
+.fieldnotes-ui .fnchat :is(h2,h3,h4,p,button,input,textarea,label,small,strong,select) { font-family:var(--sans); }
+.fieldnotes-ui .fnchat-gate h2 { font-size:clamp(38px,4.8vw,60px);font-weight:500;line-height:1.3;letter-spacing:-.055em; }
+.fieldnotes-ui .fnchat-gate-copy { font-size:15px;line-height:1.95;color:#86868b; }
+.fieldnotes-ui .fnchat-unlock h3 { font-size:26px;font-weight:500;line-height:1.5;letter-spacing:-.035em; }
+.fieldnotes-ui .fnchat-message :is(pre,code) { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+@media(max-width:680px){.fieldnotes-ui .fnchat-gate{gap:38px;padding-inline:0;}.fieldnotes-ui .fnchat-gate h2{font-size:40px;}}

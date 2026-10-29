@@ -1,0 +1,38 @@
+/* Article-only controls; quiet ink, 44px targets, no external icon font. */
+.crolord-article-actions { display:flex; align-items:center; justify-content:space-between; gap:8px; margin:36px 0 0; color:#77777f; font-family:var(--sans); }
+.crolord-like-wrap { position:relative; flex:none; }
+.crolord-article-actions .crolord-action { display:inline-flex; flex:none; align-items:center; justify-content:center; gap:7px; width:44px; height:44px; margin:0; padding:0; border:0; border-radius:50%; background:transparent; color:inherit; line-height:1; text-decoration:none; box-shadow:none; cursor:pointer; -webkit-tap-highlight-color:transparent; transition:background-color .15s ease,color .15s ease; }
+.crolord-article-actions .crolord-action svg { display:block; flex:none; width:18px; height:18px; }
+.crolord-article-actions .crolord-action:hover { background:#f5f5f7; color:#3a3a3e; }
+.crolord-article-actions .crolord-action:focus-visible, .crolord-share-dialog .crolord-copy-link:focus-visible, .crolord-share-dialog .crolord-share-url:focus-visible { outline:2px solid #8e8e93; outline-offset:3px; }
+.crolord-article-actions .crolord-like { width:44px; min-width:44px; padding:0; background:transparent; }
+.crolord-like [data-like-count] { color:inherit; font-size:11px; font-variant-numeric:tabular-nums; }
+.crolord-like [data-like-count][hidden] { display:none; }
+.crolord-article-actions .crolord-like[aria-pressed="true"] { color:#515156; }
+.crolord-like[aria-pressed="true"] svg { fill:currentColor; }
+.crolord-like[aria-busy="true"] { opacity:.6; cursor:progress; }
+.crolord-share-actions { display:flex; align-items:center; flex:none; gap:0; }
+.crolord-like-wrap.has-error .crolord-action-status { position:absolute!important; z-index:2; top:100%; left:0; width:240px; height:auto; margin:6px 0 0; padding:9px 12px; overflow:visible; clip:auto; white-space:normal; border:1px solid #ececef; border-radius:10px; background:#fff; color:#6e6e73; font-size:12px; line-height:1.7; }
+.crolord-article-actions .crolord-share-dialog { width:min(336px,calc(100vw - 32px)); max-height:calc(100svh - 32px); margin:auto; padding:38px 26px 20px; overflow:auto; border:1px solid #ededf0; border-radius:20px; background:#fff; color:#515156; text-align:center; box-shadow:0 16px 64px #1d1d1f12; }
+.crolord-share-dialog:not([open]) { display:none; }
+.crolord-share-dialog::backdrop { background:#1d1d1f38; }
+.crolord-share-dialog .crolord-dialog-close { position:absolute; top:10px; right:10px; color:#929298; background:transparent; outline-offset:-5px; }
+.crolord-share-dialog h2 { margin:0 24px 12px; color:#3a3a3e; font-size:18px; font-weight:500; line-height:1.5; letter-spacing:-.025em; }
+.crolord-share-dialog .crolord-share-help { max-width:254px; margin:0 auto; color:#86868b; font-size:12px; line-height:1.8; }
+.crolord-share-qr { display:grid; place-items:center; width:192px; height:192px; max-width:100%; margin:24px auto 16px; background:#fff; }
+.crolord-share-qr svg { display:block; width:192px; height:192px; max-width:100%; }
+.crolord-share-qr[aria-busy="true"] { border:1px solid #f2f2f4; border-radius:8px; }
+.crolord-share-dialog .crolord-share-title { overflow:hidden; margin:0 0 12px; color:#6e6e73; font-size:12px; line-height:1.8; text-overflow:ellipsis; white-space:nowrap; }
+.crolord-share-dialog .crolord-share-url { display:block; width:100%; height:36px; margin:0 0 12px; padding:6px 10px; border:0; border-radius:7px; background:#f6f6f8; color:#86868b; font-family:var(--sans); font-size:12px; line-height:1.5; text-overflow:ellipsis; box-shadow:none; }
+.crolord-share-dialog .crolord-copy-link { display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:44px; margin:0; padding:0 16px; border:0; border-radius:8px; background:transparent; color:#515156; font-family:var(--sans); font-size:12px; line-height:1.5; box-shadow:none; cursor:pointer; }
+.crolord-share-dialog .crolord-copy-link:hover { background:#f7f7f8; color:#1d1d1f; }
+.crolord-share-dialog .crolord-copy-link svg { width:14px; height:14px; }
+.crolord-share-dialog .crolord-share-status:empty { display:none; }
+.crolord-share-dialog .crolord-share-status { min-height:20px; margin:10px 0 0; color:#86868b; font-size:12px; line-height:1.7; }
+.crolord-actions-noscript { flex-basis:100%; color:#86868b; font-size:12px; line-height:1.7; }
+@media (max-width:360px) { .crolord-article-actions .crolord-action { gap:5px; } }
+@media (prefers-reduced-motion:reduce) { .crolord-article-actions .crolord-action { transition:none; } }
+
+.crolord-share-dialog .crolord-dialog-close svg { width:14px; height:14px; }
+.crolord-share-dialog h2:focus { outline:none; }
+.crolord-share-dialog .crolord-dialog-close:focus:not(:focus-visible) { outline:none; }

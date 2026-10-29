@@ -1,0 +1,279 @@
+.fn-accordion-content {
+  min-height: 0;
+}
+.fn-accordion > summary > span {
+  transition: transform .18s ease, color .18s ease;
+}
+.fn-accordion[open] > summary > span[aria-hidden] {
+  transform: rotate(45deg);
+}
+.site-header {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .boughs-index-item,
+  .crolord-work,
+  .fave-card {
+    transition: background-color .18s ease, opacity .28s ease;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  .fnchat *,
+  .fntm-map-wrap * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+.crolord-site-identity,
+.crolord-site-identity .custom-logo-link {
+  width: 44px;
+  height: 44px;
+}
+.crolord-site-identity .crolord-image-logo {
+  width: 35px;
+  height: 35px;
+  filter: none;
+  opacity: 1;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  mix-blend-mode: normal;
+}
+.crolord-site-identity .custom-logo-link {
+  border-radius: 0;
+  background: transparent;
+}
+.home .site-header .site-branding {
+  visibility: hidden;
+}
+.home .site-header .site-branding .brand {
+  display: none;
+}
+body a,
+body a:focus {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+body a::selection,
+::selection {
+  background: #e8e8ec;
+  color: #1d1d1f;
+  text-decoration: none;
+}
+.primary-nav a:after,
+.post-title a:after,
+.boughs-work-filter a:after,
+.boughs-topic-filter a:after {
+  display: none !important;
+}
+.primary-nav a,
+.boughs-work-filter a,
+.boughs-topic-filter a,
+.boughs-fave-filters a,
+.entry-content a {
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
+body :where(h1, h2, h3, h4, h5, h6, p, li, dt, dd, blockquote, pre, code, td, th, caption, figcaption, time, small, span, a, strong, em, b, i, q, s, mark, abbr, label, summary, output, [role=alert], [role=status]) {
+  -webkit-user-select: text;
+  user-select: text;
+}
+body :where(input, textarea, [contenteditable=true], [contenteditable=true] *) {
+  -webkit-user-select: text;
+  user-select: text;
+}
+body :where(svg, svg *, img, video, canvas, [aria-hidden=true], [aria-hidden=true] *, .screen-reader-text, .screen-reader-text *) {
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}
+body.fieldnotes-ui {
+  --fn-field-fill:#fff;
+}
+body.fieldnotes-ui :is(input, textarea, select, [contenteditable=true]) {
+  caret-color: #1d1d1f;
+}
+body.fieldnotes-ui :is(input, textarea, select, [contenteditable=true]):focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+body.fieldnotes-ui :is(input, textarea):focus::placeholder {
+  color: transparent;
+}
+body.fieldnotes-ui .comment-form .fct-form-field input,
+body.fieldnotes-ui .comment-form .fct-form-field input:focus,
+body.fieldnotes-ui .fntm-map-wrap .fntm-place-search input,
+body.fieldnotes-ui .fntm-map-wrap .fntm-place-search input:focus {
+  background-color: #f5f5f7;
+  border-color: transparent;
+}
+body.fieldnotes-ui :is(.site-search-panel .search-form, .fnchat-password-field, .fnchat-compose, .fct-composer-shell, .fn-market-search-field),
+body.fieldnotes-ui :is(.site-search-panel .search-form, .fnchat-password-field, .fnchat-compose, .fct-composer-shell, .fn-market-search-field):focus-within {
+  outline: 0;
+  box-shadow: none !important;
+}
+body.fieldnotes-ui .fn-market-search-field,
+body.fieldnotes-ui .fn-market-search-field:focus-within {
+  border-color: #e1e1e6;
+  background: #fff;
+}
+body.fieldnotes-ui .fct-composer-shell,
+body.fieldnotes-ui .fct-composer-shell:focus-within {
+  border-color: #e8e8ed;
+  background: #fff;
+}
+body.fieldnotes-ui .fnchat-password-field,
+body.fieldnotes-ui .fnchat-password-field:focus-within {
+  border-color: #e8e8ed;
+  background: #fff;
+}
+body.fieldnotes-ui .fnchat-compose,
+body.fieldnotes-ui .fnchat-compose:focus-within {
+  border-color: #ededf0;
+  background: #f7f7f8;
+}
+body.fieldnotes-ui .fn-market-write :is(input, textarea),
+body.fieldnotes-ui .fn-market-write :is(input, textarea):focus {
+  border-color: #e1e1e6;
+  background: #fff;
+}
+body.fieldnotes-ui .site-search-panel .search-form:focus-within {
+  background: #f5f5f7;
+}
+body.fieldnotes-ui .fct-emoji-editor:focus::before {
+  content: none;
+}
+body.fieldnotes-ui .fct-emoji-editor {
+  -webkit-user-select: text;
+  user-select: text;
+  pointer-events: auto;
+}
+body.fieldnotes-ui :is(.site-search-panel .search-form, .fnchat-password-field, .fnchat-compose, .fct-composer-shell, .fn-market-search-field) :is(input, textarea, [contenteditable=true]):focus {
+  border-color: transparent;
+}
+html.fn-keyboard-focus body.fieldnotes-ui :is(input, textarea, select, [contenteditable=true]):focus {
+  outline: 1px solid #86868b !important;
+  outline-offset: 1px;
+}
+body.fieldnotes-ui input:-webkit-autofill,
+body.fieldnotes-ui input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #1d1d1f;
+  -webkit-box-shadow: 0 0 0 1000px var(--fn-field-fill) inset !important;
+}
+body.fieldnotes-ui :is(input, textarea, [contenteditable=true], [contenteditable=true] *)::selection {
+  background: #e8e8ed;
+  color: #1d1d1f;
+  text-decoration: none;
+}
+body.fieldnotes-ui :where(.reading-lead, .reading-story .entry-content > p, .topic-description, .page-description, .boughs-heading > p, .fnchat-message-body > p, .comment-content > p) {
+  overflow: clip;
+}
+html.fn-focus-ready:not(.fn-keyboard-focus) body.fieldnotes-ui :focus {
+  outline: 0 !important;
+}
+body.fieldnotes-ui :is(a, button, summary):focus-visible {
+  outline: 1px solid #86868b;
+  outline-offset: 1px;
+}
+body.fieldnotes-ui :is(main, section, article, header, h1, h2, h3)[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+body.fieldnotes-ui :is(.primary-nav a, .crolord-mobile-nav a, .boughs-fave-filters a, .reading-category, .boughs-heading h1, .boughs-index-heading h1, .boughs-index-heading h1 > span, .page-title, .fntm-map-intro h1, .fntm-map-intro h2) {
+  color: var(--ink,#1d1d1f);
+}
+body.fieldnotes-ui .comments-area .comment-list,
+body.fieldnotes-ui .comments-area .comment-list li,
+body.fieldnotes-ui .comments-area .comment-list .children {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+}
+body.fieldnotes-ui .comments-area .comment-list > li {
+  padding: 10px 0 20px;
+}
+body.fieldnotes-ui .comments-area .comment-list > li + li {
+  margin-top: 28px;
+}
+body.fieldnotes-ui .comments-area .comment-list .children {
+  margin: 22px 0 0 52px;
+  padding: 0;
+}
+body.fieldnotes-ui .comments-area .comment-list .children li {
+  margin: 0;
+  padding: 10px 0;
+}
+body.fieldnotes-ui .comments-area .comment-list .children li + li {
+  margin-top: 16px;
+}
+body.fieldnotes-ui .comments-area .comment-list .children .children {
+  margin-left: 16px;
+}
+body.fieldnotes-ui .comments-area .comment-list .children .comment-body {
+  min-height: 36px;
+  padding-left: 44px;
+}
+body.fieldnotes-ui .comments-area .comment-list .children .avatar {
+  width: 32px;
+  height: 32px;
+}
+body.fieldnotes-ui .comments-area .comment-list .comment-content p {
+  margin: 8px 0;
+}
+body.fieldnotes-ui .comments-area .comment-list .comment-respond {
+  margin: 24px 0;
+  padding: 18px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+@media (max-width: 680px) {
+  body.fieldnotes-ui .comments-area .comment-list .children {
+    margin-left: 24px;
+  }
+  body.fieldnotes-ui .comments-area .comment-list .children .children {
+    margin-left: 12px;
+  }
+}
+body.fieldnotes-ui .discovery-heading h1 {
+  font-size: clamp(38px, 4.8vw, 60px);
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: -.055em;
+}
+@media (max-width: 580px) {
+  body.fieldnotes-ui .discovery-heading h1 {
+    font-size: 40px;
+  }
+}
+html:root:root body :is(a, a *, button, button *, summary, summary *, label, label *) {
+  text-decoration: none !important;
+  text-decoration-line: none !important;
+}
+html:root:root body ::selection {
+  color: inherit;
+  background: #e5e5e9;
+  text-decoration: none !important;
+  text-shadow: none;
+}
+body :where(main, section, article, aside, nav, header, footer, figure, form, fieldset, dialog, div, ul, ol, dl, table, thead, tbody, tfoot, tr) {
+  -webkit-user-select: none;
+  user-select: none;
+}
+body :where(h1, h2, h3, h4, h5, h6, p, li, dt, dd, blockquote, pre, code, td, th, caption, figcaption, time, small, span, a, strong, em, b, i, q, s, mark, abbr, label, summary, output, [role=alert], [role=status]) {
+  -webkit-user-select: text;
+  user-select: text;
+}
+body :where(input, textarea, [contenteditable=true], [contenteditable=true] *) {
+  -webkit-user-select: text;
+  user-select: text;
+}
+html:root:root body :where(main, section, article, aside, nav, header, footer, figure, form, fieldset, dialog, div, ul, ol, dl, table, thead, tbody, tfoot, tr)::selection {
+  background: transparent;
+}
+body :where(svg, svg *, img, video, canvas, [aria-hidden=true], [aria-hidden=true] *, .screen-reader-text, .screen-reader-text *) {
+  -webkit-user-select: none !important;
+  user-select: none !important;
+}

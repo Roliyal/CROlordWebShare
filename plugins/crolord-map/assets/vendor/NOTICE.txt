@@ -1,0 +1,30 @@
+Third-party components in Fieldnotes Travel Map 1.4.0
+
+Mapbox wordmark
+Original, unmodified 88x23 SVG from the official Mapbox GL JS v1.13.3 CSS:
+https://api.mapbox.com/mapbox-gl-js/v1.13.3/mapbox-gl.css
+Used only to attribute user-enabled Mapbox detailed tiles. The logo remains
+Mapbox's trademark; no Mapbox GL runtime is bundled by this addition.
+Attribution requirements: https://docs.mapbox.com/help/dive-deeper/attribution/
+
+Leaflet 1.9.4
+https://leafletjs.com/
+https://github.com/Leaflet/Leaflet/tree/v1.9.4
+BSD 2-Clause. Original license: leaflet/LICENSE.
+
+Leaflet.markercluster 1.5.3
+https://github.com/Leaflet/Leaflet.markercluster/tree/v1.5.3
+MIT. Original license: markercluster/MIT-LICENCE.txt.
+
+Local land silhouette
+Natural Earth 1:110m land, redistributed via world-atlas 2.0.2.
+https://www.naturalearthdata.com/about/terms-of-use/
+https://github.com/topojson/world-atlas
+Geographic data is public domain. world-atlas redistribution is ISC;
+original license: world-atlas-LICENSE.txt.
+Converted from TopoJSON with topojson-client 3.1.0 (ISC; license included),
+then preprojected to a square Web Mercator extent with d3-geo 3.1.1.
+The path is clipped at the antimeridian to avoid cross-world seam artifacts.
+No runtime TopoJSON or D3 dependency is loaded by the plugin.
+The silhouette contains land outlines only, not political boundaries or
+street labels. It is intended as a coarse overview when tiles are unavailable.

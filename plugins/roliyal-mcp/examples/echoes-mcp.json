@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "roliyal": {
+      "url": "https://roliyal.com/wp-json/roliyal-mcp/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer REPLACE_WITH_MCP_TOKEN"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+/* Related travel notes only: no Leaflet dependency on article pages. */
+.entry-content .fntm-related-places,.fntm-related-places { margin:32px 0 0;padding:20px 22px;border:1px solid #eeeef0;border-radius:12px;font-family:var(--sans,system-ui,sans-serif); }
+.entry-content .fntm-related-places h2,.fntm-related-places h2 { margin:0 0 12px;color:#86868b;font-size:12px;font-weight:400;line-height:1.6; }
+.entry-content .fntm-related-places ul,.fntm-related-places ul { margin:0;padding:0;list-style:none; }
+.entry-content .fntm-related-places li,.fntm-related-places li { display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:0;padding:6px 0;list-style:none;color:#86868b;font-size:12px;line-height:1.8; }
+.fntm-related-places li::marker { content:''; }
+.fntm-related-places strong { color:#515156;font-weight:500; }
+.entry-content .fntm-related-places a,.fntm-related-places a { margin-left:auto;color:#6e6e73;font-size:11px;text-decoration:none; }
+.fntm-related-places a:hover { color:#1d1d1f; }
+.fntm-related-places a:focus-visible { outline:2px solid #8e8e93;outline-offset:4px;border-radius:2px; }

@@ -1,0 +1,24 @@
+crolord-publisher browser component 1.19.1
+Independent adapter code: issac, GPL-2.0-or-later.
+
+Playwright and its Docker seccomp profile:
+https://github.com/microsoft/playwright/tree/v1.58.2
+Microsoft Corporation. Apache License 2.0 (licenses/Apache-2.0.txt).
+seccomp_profile.json is reproduced unmodified from utils/docker/seccomp_profile.json
+at v1.58.2 (Git blob fddc05fb520affb145404e6f6f647ca96af8087d).
+The profile is based on Docker/Moby's default seccomp policy, Apache 2.0.
+Browser binaries/npm packages are fetched by the administrator's container build;
+they are not embedded in the WordPress install ZIP. Their original licenses remain
+inside the upstream package/image.
+
+DOM-selector research (no extension source code copied):
+leaperone/MultiPost-Extension, Apache-2.0, commit
+a63a5de63d562b13d60bdbc8a8c04998132d82d7:
+src/sync/dynamic/weibo.ts
+src/sync/video/weibo.ts
+src/contents/helper/weibo.ts
+https://github.com/leaperone/MultiPost-Extension
+The adapter here is independently written, uses native Playwright input actions,
+submits once, persists intent/receipts, and verifies the same post. It does not
+inherit the extension's repeated-submit loop or report its claims as real-account
+testing. Weibo's interface can change and challenge access from any region.
